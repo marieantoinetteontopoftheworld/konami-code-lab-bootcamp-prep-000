@@ -2,8 +2,6 @@ const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 
 var index = 0; // tracker
 
-console.log('I\'m here!')
-
 function init() {
   // Write your JavaScript code inside the init() function
   document.body.addEventListener('keydown', function(e) {
@@ -14,7 +12,7 @@ function init() {
       index++;
       console.log(index);
 
-      if (index === code.length - 1) {
+      if (index === code.length) {
         alert('Konami!');
 
         index = 0;
